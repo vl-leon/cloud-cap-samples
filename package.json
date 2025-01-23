@@ -54,6 +54,26 @@
   "private": true,
   "cds": {
     "requires": {
+      "[production]": {
+        "db": {
+          "kind": "hana",
+          "model": [
+            "db",
+            "common/db",
+            "common/srv",
+            "bookshop/db",
+            "bookshop/srv",
+            "bookstore/db",
+            "bookstore/srv",
+            "data-viewer/db",
+            "data-viewer/srv",
+            "orders/db",
+            "orders/srv",
+            "reviews/db",
+            "reviews/srv"
+          ]
+        }
+      },
       "destinations": true
     },
     "sql": {
