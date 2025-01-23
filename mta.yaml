@@ -149,6 +149,9 @@ resources:
       service: enterprise-messaging
       service-plan: default
       path: ./event-mesh.json
+      config:
+        emname: bookstore-${org}-${space}
+        namespace: cap/cloud/samples
   - name: samples-db
     type: com.sap.xs.hdi-container
     parameters:
