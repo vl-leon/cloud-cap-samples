@@ -14,9 +14,12 @@
   },
   "cds": {
     "requires": {
-      "[production]": {
-        "messaging": "enterprise-messaging"
-      }
+      "messaging": {
+        "[development]": { "kind": "file-based-messaging" },
+        "[hybrid]": { "kind": "enterprise-messaging-shared" },
+        "[production]": { "kind": "enterprise-messaging" }
+      },
+      "db": { "kind": "sql" }
     }
   },
   "scripts": {
