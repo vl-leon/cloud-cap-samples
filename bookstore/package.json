@@ -36,8 +36,6 @@
         }
       },
       "[production]": {
-        "auth": "xsuaa",
-        "db": "hana",
         "messaging": "enterprise-messaging"
       }
     },
