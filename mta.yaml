@@ -151,7 +151,7 @@ resources:
       path: ./event-mesh.json
       config:
         emname: bookstore-${org}-${space}
-        namespace: cap/cloud/samples
+        namespace: cap/samples/${space}
   - name: samples-db
     type: com.sap.xs.hdi-container
     parameters:
