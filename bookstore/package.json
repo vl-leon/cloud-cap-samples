@@ -44,9 +44,7 @@
         "kind": "sql"
       }
     },
-    "log": {
-      "service": true
-    }
+    "log": { "service": true }
   },
   "scripts": {
     "start": "cds-serve"
