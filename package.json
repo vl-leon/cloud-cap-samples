@@ -50,8 +50,6 @@
     "parallel": true,
     "timeout": 6666
   },
-  "license": "SEE LICENSE IN LICENSE",
-  "private": true,
   "cds": {
     "requires": {
       "[production]": {
@@ -79,5 +77,7 @@
     "sql": {
       "native_hana_associations": false
     }
-  }
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true
 }
