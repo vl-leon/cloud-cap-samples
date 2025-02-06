@@ -1,4 +1,5 @@
 {
+  "welcomeFile": "app/bookshop/index.html",
   "routes": [
     {
       "source": "^/app/(.*)$",
