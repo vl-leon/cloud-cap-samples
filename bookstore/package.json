@@ -17,23 +17,11 @@
     "requires": {
       "ReviewsService": {
         "kind": "odata",
-        "model": "@capire/reviews",
-        "[production]": {
-          "credentials": {
-            "destination": "reviews-dest",
-            "path": "/reviews"
-          }
-        }
+        "model": "@capire/reviews"
       },
       "OrdersService": {
         "kind": "odata",
-        "model": "@capire/orders",
-        "[production]": {
-          "credentials": {
-            "destination": "orders-dest",
-            "path": "/odata/v4/orders"
-          }
-        }
+        "model": "@capire/orders"
       },
       "messaging": {
         "[development]": { "kind": "file-based-messaging" },

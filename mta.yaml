@@ -63,6 +63,9 @@ modules:
       readiness-health-check-http-endpoint: /health
       disk-quota: 256M
       memory: 256M
+    properties:
+      cds_requires_ReviewsService_credentials: {"destination": "reviews-dest","path": "/reviews"}
+      cds_requires_OrdersService_credentials: {"destination": "orders-dest","path": "/odata/v4/orders"}
     build-parameters:
       builder: npm
     provides:
