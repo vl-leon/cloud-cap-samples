@@ -14,8 +14,7 @@
   },
   "cds": {
     "requires": {
-      "messaging": true,
-      "db": { "kind": "sql" }
+      "messaging": true
     }
   },
   "scripts": {
