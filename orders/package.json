@@ -9,11 +9,7 @@
   },
   "cds": {
     "requires": {
-      "messaging": {
-        "[development]": { "kind": "file-based-messaging" },
-        "[hybrid]": { "kind": "enterprise-messaging-shared" },
-        "[production]": { "kind": "enterprise-messaging" }
-      }
+      "messaging": true
     }
   },
   "scripts": {

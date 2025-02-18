@@ -25,6 +25,8 @@ modules:
       memory: 256M
     build-parameters:
       builder: npm
+    properties:
+      cds_requires_messaging: enterprise-messaging
     provides:
       - name: orders-api
         properties:
@@ -45,6 +47,8 @@ modules:
       memory: 256M
     build-parameters:
       builder: npm
+    properties:
+      cds_requires_messaging: enterprise-messaging
     provides:
       - name: reviews-api
         properties:
@@ -64,6 +68,7 @@ modules:
       disk-quota: 256M
       memory: 256M
     properties:
+      cds_requires_messaging: enterprise-messaging
       cds_requires_ReviewsService_credentials: {"destination": "reviews-dest","path": "/reviews"}
       cds_requires_OrdersService_credentials: {"destination": "orders-dest","path": "/odata/v4/orders"}
     build-parameters:
