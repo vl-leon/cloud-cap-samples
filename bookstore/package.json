@@ -23,7 +23,8 @@
         "kind": "odata",
         "model": "@capire/orders"
       },
-      "messaging": true
+      "messaging": true,
+      "db": true
     },
     "log": { "service": true }
   },

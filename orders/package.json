@@ -9,7 +9,8 @@
   },
   "cds": {
     "requires": {
-      "messaging": true
+      "messaging": true,
+      "db": true
     }
   },
   "scripts": {
