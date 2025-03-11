@@ -5,8 +5,7 @@
   "repository": "https://github.com/sap-samples/cloud-cap-samples.git",
   "author": "daniel.hutzel@sap.com",
   "dependencies": {
-    "@sap/cds": ">=8",
-    "@cap-js/hana": "^1"
+    "@sap/cds": ">=8"
   },
   "workspaces": [
     "./bookshop",
