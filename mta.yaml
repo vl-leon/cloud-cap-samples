@@ -13,7 +13,6 @@ build-parameters:
         - npx cds build ./orders --for nodejs --production --ws-pack
         - npx cds build ./reviews --for nodejs --production
         - npx cds build ./bookstore --for nodejs --production --ws-pack
-        - npx cds build ./data-viewer --for nodejs --production
 modules:
   - name: orders-srv
     type: nodejs
@@ -79,25 +78,6 @@ modules:
       - name: samples-auth
       - name: samples-destination
 
-  - name: data-viewer-srv
-    type: nodejs
-    path: data-viewer/gen/srv
-    parameters:
-      buildpack: nodejs_buildpack
-      readiness-health-check-type: http
-      readiness-health-check-http-endpoint: /health
-      disk-quota: 256M
-      memory: 256M
-    build-parameters:
-      builder: npm
-    provides:
-      - name: data-viewer-api
-        properties:
-          srv-url: ${default-url}
-    requires:
-      - name: samples-db
-      - name: samples-auth
-
   - name: samples-db-deployer
     type: hdb
     path: shared-db/gen/db
@@ -130,12 +110,6 @@ modules:
         group: destinations
         properties:
           name: bookstore-api # must be used in xs-app.json as well
-          url: ~{srv-url}
-          forwardAuthToken: true
-      - name: data-viewer-api
-        group: destinations
-        properties:
-          name: data-viewer-api # must be used in xs-app.json as well
           url: ~{srv-url}
           forwardAuthToken: true
       - name: samples-auth

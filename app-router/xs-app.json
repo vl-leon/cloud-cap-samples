@@ -43,12 +43,6 @@
       "csrfProtection": true
     },
     {
-      "source": "^/odata/v4/-data/(.*)$",
-      "target": "/odata/v4/-data/$1",
-      "destination": "data-viewer-api",
-      "csrfProtection": true
-    },
-    {
       "source": "^(.*)$",
       "target": "$1",
       "localDir": ".",
